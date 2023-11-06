@@ -4,7 +4,11 @@ import trevo from "../../assets/trevo-quina.png";
 
 export default function Quina() {
   const { quina } = useLoteria();
+
   return (
+
+    quina.dataApuracao ?
+    <div className="principal-bloco">
     <div className="quina-bloco-principal">
       <div>
         <div className="quina-bloco-loteria">
@@ -42,5 +46,9 @@ export default function Quina() {
         </div>
       </div>
     </div>
+    </div>
+    :
+    <div className="principal-carregando"> <h3>Carregando</h3> </div>
+
   );
 }
