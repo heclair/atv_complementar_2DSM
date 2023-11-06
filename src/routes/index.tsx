@@ -5,7 +5,7 @@ export default function Rotas(){
     return(
         <BrowserRouter>
         <Routes>
-            
+            <Route to = "/mega element"
             
         </Routes>        
         </BrowserRouter>
