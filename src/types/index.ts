@@ -11,10 +11,13 @@ export interface Props {
     tipoJogo: string;
     valorEstimadoProximoConcurso: number;
     valorPremio: number;
+
   }
 
   export interface LoteriaProps {
     megasena:Props;
     lotofacil:Props;
     quina: Props;
+    ativo:string;
+    setAtivo:(value:string) => void;
   }
